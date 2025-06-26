@@ -1,0 +1,475 @@
+ .main-navbar {
+  background-color: #c4c3c3; /* Light gray */
+}
+
+ 
+ /* .nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.nav:hover{
+  color: red;
+}
+/* Hover effect */
+/* .nav-link:hover {
+  color: red;
+} */
+
+/* Underline animation */
+/* .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 15%;
+  background-color: red;
+  transition: width 0.3s ease;
+} */
+
+/* .nav-link:hover::after,
+.nav-link.active::after {
+  width: 70%;
+} */
+
+/* Optional: keep active red */
+/* .nav-link.active {
+  color: red;
+} */
+
+/* Base styles */
+/* Base style */
+.nav-link,
+.dropdown-item {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  z-index: 1;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  color: #000; /* Default color */
+}
+
+/* Hover effect */
+.nav-link:hover,
+.dropdown-item:hover {
+  color: red;
+}
+
+/* Red underline effect using pseudo-element */
+.nav-link::after,
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* 2px gap between text and underline */
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* On hover, show underline */
+.nav-link:hover::after,
+.dropdown-item:hover::after {
+  transform: scaleX(1);
+}
+
+/* Active class to keep red color and underline */
+.nav-link.active,
+.dropdown-item.active {
+  color: red;
+}
+
+.nav-link.active::after,
+.dropdown-item.active::after {
+  transform: scaleX(1);
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+
+
+ .top-bar {
+      background-color: #0b0a1e;
+      color: white;
+      font-size: 18px;
+      padding: 7px 0;
+    }
+
+    .top-bar i {
+      color: red;
+      margin-right: 5px;
+    }
+
+    .top-bar a {
+      color: white;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    .main-navbar{
+      height: 6rem;
+      
+    }
+    /* according to the Js */
+    .fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+    .main-navbar .nav-link {
+      font-weight: 700;
+      color: black;
+    }
+
+    .main-navbar .nav-link.active {
+      color: red;
+      border-bottom: 2px solid red;
+    }
+
+   .btn-quote {
+  background-color: red;
+  color: rgb(15, 9, 9);
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.8s ease;
+  perspective: 1000px;
+  
+}
+
+.btn-quote:hover {
+  color: rgb(15, 9, 9);
+  transform: rotateY(360deg);
+  background-color: red; /* Keep red on hover */
+}
+
+
+   .call-info {
+  border-left: 1px solid #eee;
+  padding-left: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.call-info {
+  border-left: 1px solid #eee;
+  padding-left: 15px;
+}
+
+/* Icon stays red */
+.call-info i {
+  color: red;
+  margin-right: 5px;
+}
+
+/* Anchor default color + transition */
+.call-info a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Only phone number turns red on hover */
+.call-info:hover a {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+    /* Banner */
+    .banner{
+        height: 40rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: gray;
+        align-items: center;
+    }
+
+    /* card */
+
+    .service-card {
+      border-radius: 1rem;
+      padding: 30px 20px;
+      position: relative;
+      text-align: center;
+      background: white;
+      box-shadow: 0 4px 20px rgba(15, 15, 15, 0.05);
+      transition: all 0.3s ease;
+      min-height: 290px;
+      width: 20rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .service-icon {
+      background-color: #f8f8f8;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .service-icon i {
+      color: red;
+      font-size: 24px;
+    }
+
+    .service-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card-count {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 14px;
+      color: #334;
+      font-weight: 500;
+    }
+
+    /* footer */
+
+    .footer {
+      background-color: #0b0a1e;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer h5 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .footer h5::after {
+      content: '';
+      width: 30px;
+      height: 2px;
+      background: red;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: red;
+    }
+
+    .footer .btn-red {
+      background-color: red;
+      color: white;
+      border-radius: 30px;
+    }
+
+    .footer .form-control,
+    .footer .btn {
+      border-radius: 0;
+    }
+
+    .footer .btn-submit {
+      background-color: red;
+      color: white;
+    }
+
+    .footer .title-gradient {
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: red;
+      color: white;
+      border-radius: 40%;
+      padding: 12px;
+      z-index: 999;
+    }
+
+
+
+      .business-section {
+      padding: 60px 0;
+      background: #f9f9f9;
+    }
+
+    .business-image {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .business-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 30px;
+    }
+
+    .progress-card {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: white;
+      border-radius: 20px;
+      padding: 15px 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .progress-card h5 {
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .progress-bar-container {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .progress-bar-item {
+      width: 10px;
+      height: 60px;
+      background: linear-gradient(to top, #00ff84, #00caff);
+      border-radius: 10px;
+    }
+
+    .icon-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .icon-card i {
+      font-size: 32px;
+      color: red;
+    }
+
+    .icon-card .text h4 {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .icon-card .text p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .company-label {
+      font-size: 14px;
+      font-weight: 600;
+      background: #dc3545;
+      color: white;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 30px;
+      margin-bottom: 15px;
+    }
+
+    .Login{
+        background-color: #0b0a1e !important;
+        color: #eee;
+    }
+    .flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 220px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
