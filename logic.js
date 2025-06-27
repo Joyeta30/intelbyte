@@ -26,4 +26,40 @@
       this.classList.add('active');
     });
   });
+ const form = document.getElementById("contactForm");
+  const message = document.getElementById("responseMessage");
+  const submitBtn = document.getElementById("submitBtn");
 
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    message.textContent = "";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        message.textContent = "✅ Message sent successfully!";
+        message.style.color = "green";
+        form.reset();
+      } else {
+        message.textContent = "❌ Failed to send message. Try again.";
+        message.style.color = "red";
+      }
+    } catch (error) {
+      message.textContent = "❌ Network error. Please try later.";
+      message.style.color = "red";
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send";
+  });
