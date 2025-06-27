@@ -12,66 +12,98 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<div class="banner">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
 
-<!-- Top Bar and Navbar (copied from home page) -->
-<div class="top-bar">
-  <div class="container-fluid">
-    <div class="row align-items-center">
-      <div class="col-md-4 d-flex align-items-center">
-        <i class="fas fa-location-arrow"></i>
-        <div class="ms-3"><i class="fas fa-envelope"></i></div>
+      <!-- Left Side Text -->
+      <div class="col-md-6 banner-text">
+        <p>Empower Your Business</p>
+        <h3>Custom Websites that Drive Business</h3>
+        <p>Responsive, secure, and optimized websites built to perform.</p>
+        <button class="btn custom-red-btn">Know More</button>
       </div>
-      <div class="col-md-4 text-center">
-        <i class="fas fa-clock"></i> IntelByte
-      </div>
-      <div class="col-md-4 text-end">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#"><i class="fas fa-times"></i></a>
-      </div>
+
+     
+
     </div>
   </div>
 </div>
+<section class="hero-section">
+  <div class="container"> 
+</section>
 
-<nav class="navbar navbar-expand-lg bg-white main-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="../logo.png" alt="Logo" height="40" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="../portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
-      </ul>
-      <div class="d-flex align-items-center">
-        <a href="#" class="btn Login rounded-pill px-4">Login</a>
-        <a href="#" class="btn btn-quote me-3"><i class="fab fa-whatsapp"></i> Get A Quote</a>
-        <div class="call-info d-none d-lg-block">
-          <i class="fas fa-phone-alt"></i> Call Anytime <br /><strong>+123 7878 222</strong>
-        </div>
+<section class="tech-stack-section">
+  <h2 class="section-title">Our Technology Capabilities</h2>
+ 
+
+  <div class="tabs-container">
+    <!-- Left Side Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-target="backend">Back End Programming Languages</button>
+      <button class="tab" data-target="frontend">Front End Programming Languages</button>
+      <button class="tab" data-target="mobile">Mobile</button>
+      <button class="tab" data-target="cloud">Cloud Databases, Warehouses And Storage</button>
+    </div>
+
+    <!-- Right Side Logos -->
+    <div class="tech-logos">
+      <!-- Backend Content -->
+      <div class="tab-content active" id="backend">
+        <img src="img/wordpress.png" alt="WordPress">
+        <img src="img/yii.png" alt="Yii">
+        <img src="img/codeigniter.png" alt="CodeIgniter">
+        <img src="img/laravel.png" alt="Laravel">
+        <img src="img/nodejs.png" alt="Node.js">
+        <img src="img/expressjs.png" alt="Express.js">
+        <img src="img/meteor.png" alt="Meteor">
+        <img src="img/nextjs.png" alt="Next.js">
+        <img src="img/php.png" alt="PHP">
+      </div>
+
+      <!-- Frontend Content -->
+      <div class="tab-content" id="frontend">
+        <img src="img/html5.png" alt="HTML5">
+        <img src="img/css3.png" alt="CSS3">
+        <img src="img/js.png" alt="JavaScript">
+        <img src="img/react.png" alt="React">
+        <img src="img/vue.png" alt="Vue.js">
+        <img src="img/mysql.png" alt="MySQL">
+        <img src="img/mongodb.png" alt="MongoDB">
+      </div>
+
+      <!-- Mobile Content -->
+      <div class="tab-content" id="mobile">
+        <img src="img/flutter.png" alt="Flutter">
+        <img src="img/react-native.png" alt="React Native">
+        <img src="img/ionic.png" alt="Ionic">
+      </div>
+
+      <!-- Cloud Content -->
+      <div class="tab-content" id="cloud">
+        <img src="img/aws.png" alt="AWS">
+        <img src="img/firebase.png" alt="Firebase">
+        <img src="img/azure.png" alt="Azure">
+        <img src="img/mongodb.png" alt="MongoDB">
+        <img src="img/mysql.png" alt="MySQL">
       </div>
     </div>
   </div>
-</nav>
+</section>
+
 
 <!-- Page Content -->
 <div class="container my-5">
-  <h4 class="text-success mb-4"><i class="fas fa-arrow-right me-2"></i>How We Work</h4>
+  <h4 class="text-success mb-4"><i class="fas fa-arrow-right me-2"></i>Services We Offer</h4>
   <div class="row g-4 justify-content-center">
 
     <!-- Card 1 -->
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front bg-dark text-white text-center p-4">
-            <h5 class="text-success">Step 01</h5>
-            <h4 class="fw-bold">Machine Learning</h4>
+          <div class="flip-card-front text-black text-center p-4">
+            <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h4 class="fw-bold">Static Website</h4>
           </div>
           <div class="flip-card-back bg-dark text-white p-4">
             <p>We integrate machine learning models into your systems to unlock automation and data-driven insights.</p>
@@ -81,13 +113,13 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front text-white text-center p-4" style="background-color: #f21b31;">
-
-            <h5 class="text-dark">Step 02</h5>
-            <h4 class="fw-bold">Blockchain Development</h4>
+          <div class="flip-card-front text-black text-center p-4">
+<div class="service-icon"><i class="fas fa-robot"></i></div>
+            
+            <h4 class="fw-bold">Custom Websites that Drive Business</h4>
           </div>
           <div class="flip-card-back bg-success text-white p-4">
             <p>We build secure and scalable blockchain applications tailored for business needs.</p>
@@ -97,12 +129,27 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front text-white text-center p-4" style="background-color: #0f0536;">
-            <h5 class="text-success">Step 03</h5>
-            <h4 class="fw-bold">Smart Contracts & DApps</h4>
+          <div class="flip-card-front text-black text-center p-4">
+           <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h4 class="fw-bold">CMS (WordPress, Joomla)</h4>
+          </div>
+          <div class="flip-card-back bg-dark text-white p-4">
+            <p>We design decentralized applications and smart contracts for trustless transactions on blockchain networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Card 4 -->
+    <div class="col-md-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front text-black text-center p-4">
+            <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <h4 class="fw-bold">E-commerce (Shopify, WooCommerce)</h4>
           </div>
           <div class="flip-card-back bg-dark text-white p-4">
             <p>We design decentralized applications and smart contracts for trustless transactions on blockchain networks.</p>
@@ -115,20 +162,15 @@
 </div>
 
 
-
-
-<!-- Footer (reuse from home page) -->
-<footer class="footer mt-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <div class="title-gradient">LET’S GET IN TOUCH</div>
-      <hr style="border-color: red; width: 100px; margin: 0 auto;">
-    </div>
-    <div class="footer-bottom">
-      Copyright © 2025 Intelbyte
+  <div class="process-flow">
+      <h2>Process Flow</h2>
+      <p>Planning → Designing → Development → Testing → Launch</p>
     </div>
   </div>
-</footer>
+
+
+
+
 
 <!-- Scroll Top -->
 <a href="#" class="scroll-top-btn">
