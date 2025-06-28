@@ -638,20 +638,23 @@
   /* Tabs style */
 .tabs-container {
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   flex-wrap: wrap;
   background: #fff;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(221, 5, 5, 0.1);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.tabs {
+ .tabs {
   display: flex;
   flex-direction: column;
   gap: 10px;
   min-width: 250px;
-}
+ 
+} 
 
 .tab {
   background-color: #f1f1f1;
@@ -662,6 +665,7 @@
   border-radius: 10px;
   font-weight: 600;
   transition: background 0.3s ease;
+  
 }
 
 .tab:hover {
@@ -887,3 +891,31 @@
     .step:hover { background-color: #e9ecef; transform: scale(1.03); }
     .gallery-img { width: 100%; border-radius: 8px; transition: transform 0.3s ease; }
     .gallery-img:hover { transform: scale(1.05); }
+
+  /* StaffAugment */
+  .hero {
+      background: url('casino-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #0d6efd;
+    }
+    .game-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .game-card:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .tech-logo {
+      height: 50px;
+      margin: 10px;
+    }
