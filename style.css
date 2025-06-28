@@ -919,3 +919,54 @@
       height: 50px;
       margin: 10px;
     }
+
+    /* casinogamedeveloper */
+ .game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  height: 250px;
+}
+
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+}
+.game-card i {
+  color: #007bff;
+}
+.game-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 15px 10px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+  text-align: center;
+}
+
+.game-card:hover .game-content {
+  transform: translateY(0);
+}
+
+.game-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.game-details {
+  font-size: 14px;
+  margin-top: 5px;
+}
